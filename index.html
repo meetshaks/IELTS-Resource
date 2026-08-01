@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Hub | Ultimate Resource Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a; /* Deep Navy */
+            --accent: #f59e0b; /* Amber/Gold */
+            --bg: #f8fafc; /* Light Gray */
+            --card-bg: #ffffff;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 5px solid var(--accent);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: -40px auto 0;
+            padding: 0 20px 50px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .category-title::before {
+            content: '';
+            display: block;
+            width: 8px;
+            height: 30px;
+            background: var(--accent);
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+
+        /* Grid Layout */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        /* Card Design */
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border-color: var(--accent);
+        }
+
+        .card-tag {
+            display: inline-block;
+            background: #fef3c7;
+            color: #92400e;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            align-self: flex-start;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card a {
+            text-decoration: none;
+            background: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: var(--accent);
+            color: var(--primary);
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Header -->
+    <header>
+        <h1>IELTS Resource Hub</h1>
+        <p>Curated, high-quality materials to help you ace your exam. Full tests, official books, and skill-building exercises.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Category 1: Full Mock Tests -->
+        <div class="category-section">
+            <h2 class="category-title">Full Mock Tests & Exam Libraries</h2>
+            <div class="resource-grid">
+                
+                <div class="card">
+                    <span class="card-tag">Mock Tests</span>
+                    <h3>IELTS Exam Library</h3>
+                    <p>Extensive library of online IELTS tests. Great for simulating the real exam environment.</p>
+                    <a href="https://ieltsonlinetests.com/ielts-exam-library" target="_blank">Start Testing</a>
+                </div>
+
+                <div class="card">
+                    <span class="card-tag">Authentic Tests</span>
+                    <h3>Jumpinto IELTS</h3>
+                    <p>Free online authentic IELTS practice tests to evaluate your current band score.</p>
+                    <a href="https://www.jumpinto.com/ielts/practice/home" target="_blank">Practice Now</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category 2: Official Books & Computer Tests -->
+        <div class="category-section">
+            <h2 class="category-title">Official Books & Computer-Based Practice</h2>
+            <div class="resource-grid">
+
+                <div class="card">
+                    <span class="card-tag">Official Material</span>
+                    <h3>Cambridge Books 1 to 21</h3>
+                    <p>The holy grail of IELTS preparation. Access all official Cambridge IELTS test books here.</p>
+                    <a href="https://practicepteonline.com/official-ielts-tests/" target="_blank">View Books</a>
+                </div>
+
+                <div class="card">
+                    <span class="card-tag">Computer-Based</span>
+                    <h3>IELTSMATE Question Bank</h3>
+                    <p>Practice Cambridge questions in a computer-based test format. Perfect for CD-IELTS prep.</p>
+                    <a href="https://ieltsmate.net/business/ielts/student/jumpIeltsQuestionList.do?sSubjects=10&type=0&aiType=0" target="_blank">Open Platform</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category 3: Additional Practice -->
+        <div class="category-section">
+            <h2 class="category-title">Additional Practice Resources</h2>
+            <div class="resource-grid">
+
+                <div class="card">
+                    <span class="card-tag">All Skills</span>
+                    <h3>IELTS Practice Online</h3>
+                    <p>A comprehensive resource hub for IELTS preparation, offering practice materials, tips, and sample answers across all four skills.</p>
+                    <a href="https://ieltspracticeonline.com/" target="_blank">Visit Website</a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IELTS Resource Hub. All links direct to external sources.</p>
+    </footer>
+
+</body>
+</html>
